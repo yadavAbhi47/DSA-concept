@@ -45,6 +45,5 @@ public class CountNode {
         Node root = tree.BuildTree(nodes);
         int h = tree.countNode(root);
         System.out.println("Number of nodes are:- "+h);
-        System.out.println("Hello world!");
     }
 }
