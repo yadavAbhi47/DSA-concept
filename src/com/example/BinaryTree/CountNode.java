@@ -1,6 +1,7 @@
 package com.example.BinaryTree;
 
-public class HeightOfTree {
+public class CountNode {
+
     static class Node{
         int data;
         Node left;
@@ -25,14 +26,14 @@ public class HeightOfTree {
             return newNode;
         }
 
-        public static int Height(Node root){
+        public static int countNode(Node root){
             if(root == null){
                 return 0;
             }
 
-            int lh = Height(root.left);
-            int rh = Height(root.right);
-            return Math.max(lh,rh)+1;
+            int lh = countNode(root.left);
+            int rh = countNode(root.right);
+            return lh+rh+1;
         }
     }
 
@@ -42,8 +43,7 @@ public class HeightOfTree {
         int[] nodes = {1,2,4,-1,-1,5,-1,-1,3,6,-1,-1,7,-1,-1};
         BinaryTree tree = new BinaryTree();
         Node root = tree.BuildTree(nodes);
-        int h = tree.Height(root);
-        System.out.println("Height of tree is:- "+h);
+        int h = tree.countNode(root);
+        System.out.println("Number of nodes are:- "+h);
     }
-
 }
