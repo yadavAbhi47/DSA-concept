@@ -42,6 +42,7 @@ public class SumOfNode {
         Node root = tree.buildTree(nodes);
         int value = sumOfNodes(root);
         System.out.println("Sum of the values of nodes are:- " + value);
+        System.out.println("print node");
 
     }
 }
