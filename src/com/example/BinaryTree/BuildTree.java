@@ -1,6 +1,8 @@
 package com.example.BinaryTree;
 
 public class BuildTree {
+
+
     static class Node{
         int data;
         Node left;
