@@ -2,6 +2,13 @@ package com.example.BinaryTree;
 
 public class BuildTree {
 
+    /*
+    * this program contain the concept of:-
+    * building Binary tree,
+    * preorder,
+    * inorder,
+    * postorder
+    * */
 
     static class Node{
         int data;
