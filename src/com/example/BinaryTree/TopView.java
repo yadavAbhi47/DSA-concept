@@ -37,8 +37,8 @@ public class TopView {
          */
 
         IsSubTree.Node subRoot = new IsSubTree.Node(2);
-        subRoot.left = new IsSubTree.Node(4);
+        subRoot.left = new Node(4);
 //        subRoot.right = new Node(5);
-        System.out.println(isSubTree(root,subRoot));
+
     }
 }
