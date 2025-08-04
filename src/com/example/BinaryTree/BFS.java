@@ -1,7 +1,7 @@
 package com.example.BinaryTree;
 import java.util.*;
 
-public class DFS {
+public class BFS {
 
     static class Node{
         int data;
