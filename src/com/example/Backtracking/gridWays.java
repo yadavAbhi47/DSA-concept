@@ -1,7 +1,6 @@
 package com.example.Backtracking;
 
 public class gridWays {
-
     public static int GridWays(int i, int j, int n, int m){
         if(i==n-1 && j==m-1){
             return 1;
