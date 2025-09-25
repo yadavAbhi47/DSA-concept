@@ -1,7 +1,9 @@
 package com.example.Backtracking;
-import java.util.*;
 
-public class nQueen {
+import java.util.Scanner;
+
+public class nQueenOneSolution {
+
     public static boolean checkPosition(char[][] board,int row,int col){
         //as we start from top to down in the row, we need not check the current position
         //as we place single queen in each row hence we not need to check left and right.
@@ -40,21 +42,22 @@ public class nQueen {
         }
     }
 
-    public static void nQueen(char[][] board,int row){
+    public static boolean nQueen(char[][] board,int row){
 
         if(row>=board.length){
-            printBoard(board);
-            return;
+            //printBoard(board);
+            return true;
         }
         for(int j = 0; j<board.length;j++){
             if(checkPosition(board,row,j)){
                 board[row][j] = 'Q';
-                nQueen(board,row+1);
-                board[row][j] = 'x';
-
+                if(nQueen(board,row+1)){
+                    return true;
+                }
+                board[row][j] = 'X';
             }
-
         }
+        return false;
     }
 
     public static void main(String[] args){
@@ -64,9 +67,14 @@ public class nQueen {
         char[][] board = new char[n][n];
         for(int i=0;i<n;i++){
             for(int j=0; j<n;j++){
-                board[i][j] = 'x';
+                board[i][j] = 'X';
             }
         }
-        nQueen(board,0);
+        if(nQueen(board,0)){
+            System.out.println("Solution is possible");
+            printBoard(board);
+        } else {
+            System.out.println("Solution is not possible");
+        }
     }
 }
