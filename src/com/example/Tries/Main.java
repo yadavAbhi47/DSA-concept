@@ -20,6 +20,7 @@ public class Main {
     public static void insert(String word){
         Node curr = root;
 
+
         for(int level=0; level<word.length();level++){
             int idx = word.charAt(level)-'a';
             if(curr.children[idx] == null){
