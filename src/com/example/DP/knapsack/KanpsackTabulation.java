@@ -1,6 +1,4 @@
-package com.example.DP;
-
-import java.util.Arrays;
+package com.example.DP.knapsack;
 
 public class KanpsackTabulation {
 

@@ -1,4 +1,4 @@
-package com.example.DP;
+package com.example.DP.knapsack;
 
 public class TargetSubSubset {
     public static void Print(boolean[][] arr){

@@ -1,4 +1,4 @@
-package com.example.DP;
+package com.example.DP.knapsack;
 
 public class RodCutting {
 

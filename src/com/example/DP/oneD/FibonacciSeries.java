@@ -1,5 +1,4 @@
-package com.example.DP;
-import java.sql.SQLOutput;
+package com.example.DP.oneD;
 import java.util.Scanner;
 
 public class FibonacciSeries {

@@ -1,4 +1,4 @@
-package com.example.DP;
+package com.example.DP.oneD;
 import java.util.Arrays;
 
 public class ClimbingStairs {

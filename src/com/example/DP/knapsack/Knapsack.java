@@ -1,4 +1,4 @@
-package com.example.DP;
+package com.example.DP.knapsack;
 
 import java.util.Arrays;
 
